@@ -1,0 +1,15 @@
+{
+  "note": "Config file to mock openweather end point using apimocker",
+  "mockDirectory": "~/mock_server/",
+  "quiet": false,
+  "port": "7878",
+  "logRequestHeaders": false,
+  "allowedHeaders": ["Content-Type", "my-custom-header"],
+  "corsCredentials": "true",
+  "webServices": {
+      "data/2.5/weather": {
+      "mockFile": "response.json",
+      "verbs": ["get"]
+    }
+  }
+}
